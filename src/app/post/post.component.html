@@ -16,7 +16,14 @@
         </div>
     </div>
     <div class="post-action">
-        <a href="#"><i class="fa fa-heart-o"></i></a>
+        <a href="#" (click)="toggleLove($event)">
+            <div *ngIf="isLoved; else nobodyLovesMe">
+                <i class="fa fa-heart active"></i>
+            </div>
+            <ng-template #nobodyLovesMe>
+                <i class="fa fa-heart-o"></i>
+            </ng-template>
+        </a>
         <a href="#"><i class="fa fa-comment-o"></i></a>
         <a href="#"><i class="fa fa-share"></i></a>
         <a href="#"><i class="fa fa-ellipsis-h"></i></a>

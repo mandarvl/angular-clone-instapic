@@ -64,6 +64,6 @@
     transition: color 1s;
 }
 
-.post-action>a:hover{
+.post-action>a:hover, .post-action .fa.active{
     color: rgb(255, 118, 38) ;
 }
