@@ -41,6 +41,11 @@ div, section, article, header, footer, form{
     max-width: 25%;
 }
 
+img.responsive-image{
+    width: 100%;
+    height: auto;
+}
+
 .pdp-container{
     display: flex;
     justify-content: center;
@@ -53,7 +58,6 @@ div, section, article, header, footer, form{
 }
 
 .pdp-container img{
-    flex-shrink: 0;
     height:100%; 
     min-width: 100%;
     object-fit: cover;
