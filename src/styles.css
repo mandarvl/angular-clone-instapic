@@ -1,2 +1,60 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~font-awesome/css/font-awesome.css" ;
+
+html, body{
+    padding: 0 ;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(209, 209, 209);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 118, 38) ;
+}
+
+div, section, article, header, footer, form{
+    box-sizing: border-box;
+}
+
+#right-content{
+    margin-left: 75.703px;
+}
+
+.flex-container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.flex-space>*{
+    margin: .5em ;
+}
+
+.colonne-4{
+    flex: 25%;
+    max-width: 25%;
+}
+
+.pdp-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    background-color: rgb(26, 26, 26);
+    border-radius: 50% ;
+}
+
+.pdp-container img{
+    flex-shrink: 0;
+    height:100%; 
+    min-width: 100%;
+    object-fit: cover;
+}

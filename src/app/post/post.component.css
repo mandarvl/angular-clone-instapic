@@ -1,0 +1,28 @@
+.post{
+    background-color: #fff;
+    border: 1px rgb(179, 179, 179) solid;
+}
+
+.post .post-user{
+    display: flex;
+    align-items: center;
+}
+
+.post .date{
+    color: rgb(158, 158, 158);
+    font-style: italic;
+}
+
+.post .name{
+    font-weight: bold;
+    color: black;
+    margin-left: 10px;
+}
+
+.post-header{
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 10px;
+}
