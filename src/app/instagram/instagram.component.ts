@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-instagram',
@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./instagram.component.css']
 })
 export class InstagramComponent implements OnInit {
-
-  constructor() { }
+  constructor() {
+    
+  }
 
   ngOnInit(): void {
+    
   }
 
 }

@@ -1,6 +1,5 @@
 <div class="flex-container flex-space">
-    <app-post class="colonne-4"></app-post>
-    <app-post class="colonne-4"></app-post>
-    <app-post class="colonne-4"></app-post>
-    <app-post class="colonne-4"></app-post>
+    <ng-container *ngFor="let item of posts">
+        <app-post class="colonne-4" [post]="item"></app-post>
+    </ng-container>
 </div>
