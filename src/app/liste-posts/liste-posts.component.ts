@@ -10,8 +10,8 @@ export class ListePostsComponent implements OnInit {
   posts: Post[] ;
   constructor() { 
     this.posts = [
-      new Post(1, "assets/images/1.jpg", "Ravalison Manda", "assets/images/5.jpg", "5h"),
-      new Post(2, "assets/images/3.jpg", "Rakoto Zafy", "assets/images/10.jpg", "12h")
+      new Post(1, "assets/images/1.jpg", "Rakoto Perline", "assets/images/5.jpg", "5h"),
+      new Post(2, "assets/images/3.jpg", "Rasoa Soa", "assets/images/10.jpg", "12h")
     ] ;
   }
 

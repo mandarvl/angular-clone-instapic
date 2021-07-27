@@ -7,6 +7,7 @@ import { MenuComponent } from './menu/menu.component';
 import { ListePostsComponent } from './liste-posts/liste-posts.component';
 import { PostComponent } from './post/post.component';
 import { InstagramComponent } from './instagram/instagram.component';
+import { DetailPostComponent } from './detail-post/detail-post.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { InstagramComponent } from './instagram/instagram.component';
     MenuComponent,
     ListePostsComponent,
     PostComponent,
-    InstagramComponent
+    InstagramComponent,
+    DetailPostComponent
   ],
   imports: [
     BrowserModule,
