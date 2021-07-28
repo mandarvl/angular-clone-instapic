@@ -23,7 +23,7 @@
 .post-content img{
     width: 100%;
     height: auto;
-    cursor: pointer ;
+    cursor: zoom-in ;
     transition: transform 1s ;
 }
 

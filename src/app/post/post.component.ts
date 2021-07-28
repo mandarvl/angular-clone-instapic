@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Post } from '../model/Post';
 
 @Component({
@@ -9,16 +9,37 @@ import { Post } from '../model/Post';
 export class PostComponent implements OnInit {
   @Input() post: Post ;
   isLoved: boolean ;
+  show:boolean ;
+  @Output() sendRequestToData = new EventEmitter() ;
   constructor() { 
     this.post = new Post() ;
     this.isLoved = false ;
+    this.show = false ;
   }
 
   ngOnInit(): void {
   }
 
   toggleLove($event:Event){
-    this.isLoved = !this.isLoved ;
     $event.preventDefault() ;
+    this.isLoved = !this.isLoved ;
+  }
+
+  viewDetail($event:Event){
+    $event.preventDefault() ;
+    this.show = !this.show ;
+    this.sendEvent() ;
+  }
+
+  close(){
+    this.show = false ;
+    this.sendEvent() ;
+  }
+
+  sendEvent(){
+    this.sendRequestToData.emit({
+      show: this.show,
+      selectedPost: this
+    }) ;
   }
 }

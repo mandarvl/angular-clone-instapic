@@ -4,7 +4,7 @@
             <div class="pdp-container">
                 <img src="../../{{post.author.pdpPath}}" alt="Pdp" />
             </div>
-            <a href="#" class="name">{{post.author.firstName}} {{post.author.lastName}}</a>
+            <a href="#" class="name">{{ post.author.getFullName() }}</a>
         </div>
         <div>
             <span class="date">{{post.date}}</span>
@@ -12,7 +12,7 @@
     </div>
     <div class="post-content">
         <div class="inner">
-            <img src="../../{{post.imagePath}}" alt="Publication" />
+            <img (click)="viewDetail($event)" src="../../{{post.imagePath}}" alt="Publication" />
         </div>
     </div>
     <div class="post-action">
@@ -24,7 +24,7 @@
                 <i class="fa fa-heart-o"></i>
             </ng-template>
         </a>
-        <a href="#"><i class="fa fa-comment-o"></i></a>
+        <a href="#" (click)="viewDetail($event)"><i class="fa fa-comment-o"></i></a>
         <a href="#"><i class="fa fa-share"></i></a>
         <a href="#"><i class="fa fa-ellipsis-h"></i></a>
     </div>

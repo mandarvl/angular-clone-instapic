@@ -1,14 +1,17 @@
 <div id="fullscreen">
     <div class="detail-image-container">
-        <img src="../../assets/images/7.jpg" />
+        <img src="../../{{ selectedPost.post.imagePath }}" />
     </div>
     <div class="detail-comments">
+        <div class="top-action">
+            <a href="#" (click)="closeDetail($event)" class="btn-window-close"><i class="fa fa-times-circle fa-2x"></i></a>
+        </div>
         <div class="user-header">
             <div class="post-user">
                 <div class="pdp-container">
-                    <img src="../../assets/images/6.jpg" alt="Pdp" />
+                    <img src="../../{{ selectedPost.post.author.pdpPath }}" alt="Pdp" />
                 </div>
-                <a href="#" class="name">Auteur</a>
+                <a href="#" class="name">{{ selectedPost.post.author.getFullName() }}</a>
             </div>
             <span class="date">12h</span>
         </div>

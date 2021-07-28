@@ -10,4 +10,8 @@ export class User{
         this.lastName = lastName ;
         this.pdpPath = pdpPath ;
     }
+
+    getFullName():string{
+        return this.firstName+" "+this.lastName ;
+    }
 }

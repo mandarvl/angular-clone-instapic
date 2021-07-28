@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { DataList } from '../data/DataList' ;
-import { Post } from '../model/Post' ;
+import { Component, Input, OnInit } from '@angular/core';
+import { DataList } from '../data/dataList' ;
+import { PostComponent } from '../post/post.component' ;
 
 @Component({
   selector: 'app-detail-post',
@@ -9,12 +9,16 @@ import { Post } from '../model/Post' ;
 })
 export class DetailPostComponent implements OnInit {
   public DataReference = DataList ;
-  selectedPost: Post ;
+  @Input() selectedPost: PostComponent ;
   constructor() { 
-    this.selectedPost = new Post() ;
+    this.selectedPost = new PostComponent() ;
   }
 
   ngOnInit(): void {
   }
 
+  closeDetail($event:Event): void{
+    $event.preventDefault() ;
+    this.selectedPost.close() ;
+  }
 }

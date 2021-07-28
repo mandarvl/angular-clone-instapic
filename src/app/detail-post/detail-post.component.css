@@ -33,7 +33,12 @@
     width: 30%;
     overflow: auto;
     max-height: 100%;
-    padding: 30px ;
+    padding: 20px ;
+    padding-top: 0;
+}
+
+.detail-comments .top-action{
+    text-align: right;
 }
 
 .detail-comments .main-detail{

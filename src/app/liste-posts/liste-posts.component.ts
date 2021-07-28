@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { DataList } from '../data/DataList' ;
+import { DataList } from '../data/dataList' ;
+import { PostComponent } from '../post/post.component' ;
 
 @Component({
   selector: 'app-liste-posts',
@@ -8,11 +9,18 @@ import { DataList } from '../data/DataList' ;
 })
 export class ListePostsComponent implements OnInit {
   public dataReference = DataList;
+  @Input() selectedPost: PostComponent ;
+  hideDetail:boolean ;
   constructor() { 
+    this.hideDetail = true ;
+    this.selectedPost = new PostComponent() ;
   }
 
   ngOnInit(): void {
-    
   }
 
+  processReq(message:any){
+    this.hideDetail = !message.show ;
+    this.selectedPost = message.selectedPost ;
+  }
 }

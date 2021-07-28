@@ -1,6 +1,6 @@
 <div class="flex-container flex-space">
     <ng-container *ngFor="let item of dataReference.posts">
-        <app-post class="colonne-4" [post]="item"></app-post>
+        <app-post (sendRequestToData)="processReq($event)" class="colonne-4" [post]="item"></app-post>
     </ng-container>
 </div>
-<app-detail-post></app-detail-post>
+<app-detail-post [selectedPost]="selectedPost" [hidden]="hideDetail"></app-detail-post>
