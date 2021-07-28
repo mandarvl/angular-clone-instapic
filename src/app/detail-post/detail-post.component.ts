@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DataList } from '../data/DataList' ;
+import { Post } from '../model/Post' ;
 
 @Component({
   selector: 'app-detail-post',
@@ -6,8 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./detail-post.component.css']
 })
 export class DetailPostComponent implements OnInit {
-
-  constructor() { }
+  public DataReference = DataList ;
+  selectedPost: Post ;
+  constructor() { 
+    this.selectedPost = new Post() ;
+  }
 
   ngOnInit(): void {
   }

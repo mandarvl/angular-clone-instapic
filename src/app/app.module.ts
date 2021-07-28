@@ -8,6 +8,7 @@ import { ListePostsComponent } from './liste-posts/liste-posts.component';
 import { PostComponent } from './post/post.component';
 import { InstagramComponent } from './instagram/instagram.component';
 import { DetailPostComponent } from './detail-post/detail-post.component';
+import { CommentComponent } from './comment/comment.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { DetailPostComponent } from './detail-post/detail-post.component';
     ListePostsComponent,
     PostComponent,
     InstagramComponent,
-    DetailPostComponent
+    DetailPostComponent,
+    CommentComponent
   ],
   imports: [
     BrowserModule,

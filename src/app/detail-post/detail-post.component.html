@@ -17,48 +17,9 @@
         </div>
         <h1>Commentaires</h1>
         <div class="comments-container">
-            <div class="comment">
-                <div class="user-header">
-                    <div class="post-user">
-                        <div class="pdp-container">
-                            <img src="../../assets/images/6.jpg" alt="Pdp" />
-                        </div>
-                        <a href="#" class="name">Auteur</a>
-                    </div>
-                    <span class="date">12h</span>
-                </div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-            </div>
-            <div class="comment">
-                <div class="user-header">
-                    <div class="post-user">
-                        <div class="pdp-container">
-                            <img src="../../assets/images/6.jpg" alt="Pdp" />
-                        </div>
-                        <a href="#" class="name">Auteur</a>
-                    </div>
-                    <span class="date">12h</span>
-                </div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-            </div>
-            <div class="comment">
-                <div class="user-header">
-                    <div class="post-user">
-                        <div class="pdp-container">
-                            <img src="../../assets/images/6.jpg" alt="Pdp" />
-                        </div>
-                        <a href="#" class="name">Auteur</a>
-                    </div>
-                    <span class="date">12h</span>
-                </div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-            </div>
+            <ng-container *ngFor="let item of DataReference.comments">
+                <app-comment class="colonne-4" [comment]="item"></app-comment>
+            </ng-container>
         </div>
         <form class="custom-form">
             <textarea placeholder="Entrer votre commentaire..."></textarea>

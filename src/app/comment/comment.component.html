@@ -1,0 +1,14 @@
+<div class="comment">
+    <div class="user-header">
+        <div class="post-user">
+            <div class="pdp-container">
+                <img src="../../{{ comment.author.pdpPath }}" alt="Pdp" />
+            </div>
+            <a href="#" class="name">{{ comment.author.firstName}} {{ comment.author.lastName}}</a>
+        </div>
+        <span class="date">{{ comment.date}}</span>
+    </div>
+    <p>
+        {{ comment.content}}
+    </p>
+</div>
