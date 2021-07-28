@@ -1,16 +1,16 @@
+import {User} from "../model/User" ;
+
 export class Post{
     id: number ;
     imagePath: string ;
-    authorName: string ;
-    authorPdpPath: string ;
+    author: User ;
     date: string ;
     description: string ;
 
-    constructor(id = 0, imagePath = '', authorName = '', authorPdpPath = '', date = '', description = ''){
+    constructor(id = 0, imagePath = '', author = new User(), date = '', description = ''){
         this.id = id ;
         this.imagePath = imagePath ;
-        this.authorName = authorName ;
-        this.authorPdpPath = authorPdpPath ;
+        this.author = author ;
         this.date = date ;
         this.description = description ;
     }

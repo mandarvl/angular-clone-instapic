@@ -71,15 +71,24 @@
     margin: 3px 0 18px 0;
 }
 
-form{
+.detail-comments form{
     display: flex;
+    justify-content: stretch ;
     width: 100% ;
+    margin-top: 10px ;
 }
 
-form textarea{
-    width: 80%;
+.detail-comments form textarea{
+    width: 80% ;
+    height: 40px;
 }
 
-form button{
-    width: 20%;
+.detail-comments .button-container{
+    width: 20% ;
+}
+
+.detail-comments .button-container button{
+    width: 100% ;
+    height: 100% ;
+    text-align: center ;
 }
