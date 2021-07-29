@@ -6,12 +6,14 @@ export class Comment{
     authorId: number ;
     date: string ;
     content: string ;
+    postId: number ;
 
-    constructor(id = 0, content = '', authorId = 0, date = ''){
+    constructor(id = 0, content = '', authorId = 0, date = '', postId = 0){
         this.id = id ;
         this.authorId = authorId ;
         this.date = date ;
         this.content = content ;
+        this.postId = postId ;
     }
 
     GetAuthor():User{
