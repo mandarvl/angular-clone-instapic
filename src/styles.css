@@ -82,7 +82,7 @@ div, section, article, header, footer, form{
 }
 
 #right-content{
-    margin-left: 68px;
+    margin: 10px 0 20px 68px;
     padding: 0 5px;
 }
 

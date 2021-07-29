@@ -6,10 +6,10 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { ListePostsComponent } from './liste-posts/liste-posts.component';
 import { PostComponent } from './post/post.component';
-import { InstagramComponent } from './instagram/instagram.component';
 import { DetailPostComponent } from './detail-post/detail-post.component';
 import { CommentComponent } from './comment/comment.component';
 import { PlaceHolderDirective } from './utils/placeholder.directive';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -17,10 +17,10 @@ import { PlaceHolderDirective } from './utils/placeholder.directive';
     MenuComponent,
     ListePostsComponent,
     PostComponent,
-    InstagramComponent,
     DetailPostComponent,
     CommentComponent,
-    PlaceHolderDirective
+    PlaceHolderDirective,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
