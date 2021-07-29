@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CommentComponent } from './comment/comment.component';
 import { ListePostsComponent } from './liste-posts/liste-posts.component';
+import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
   {
@@ -9,8 +10,8 @@ const routes: Routes = [
     component: ListePostsComponent
   },
   {
-    path: 'comment',
-    component: CommentComponent
+    path: 'profile',
+    component: ProfileComponent
   }
 ];
 

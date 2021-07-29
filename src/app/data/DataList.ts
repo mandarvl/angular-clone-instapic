@@ -4,9 +4,9 @@ import { Comment } from '../model/Comment' ;
 
 export class DataList{
     static users : User[] = [
-        new User(1, "Perline", "Rakoto", "assets/images/5.jpg"),
-        new User(2, "Soa", "Rasoa", "assets/images/10.jpg"),
-        new User(3, "Manda", "Ravalison", "assets/images/9.jpg")
+        new User(1, "Perline", "Rakoto", "assets/images/5.jpg" , "Follow me if you want professional's fashion and beauty advices", "../assets/images/pdc1.jpg"),
+        new User(2, "Soa", "Rasoa", "assets/images/10.jpg", "Reading book is my passion <3", "../assets/images/pdc1.jpg"),
+        new User(3, "Manda", "Ravalison", "assets/images/9.jpg", "Welcome to my profile. No code, no life", "../assets/images/pdc2.jpg")
       ] ;
   
     static posts : Post[] = [

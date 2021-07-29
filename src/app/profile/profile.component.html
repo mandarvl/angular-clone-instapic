@@ -1,1 +1,15 @@
-<p>profile works!</p>
+<div class="profile">
+    <div class="main-info">
+        <div class="pdc-cover" style="background-image:url('../../{{ user.pdcPath }}')">
+        </div>
+        <div class="profile-info">
+            <div class="pdp-container">
+                <img src="../../assets/images/11.jpg" alt="Pdp" />
+            </div>
+            <p class="user-name">{{ user.getFullName() }}</p>
+            <p class="user-bio">{{ user.bio }}</p>
+        </div>
+    </div>
+    <h2>Vos publications</h2>
+    <app-liste-posts></app-liste-posts>
+</div>

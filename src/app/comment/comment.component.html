@@ -4,7 +4,7 @@
             <div class="pdp-container">
                 <img src="../../{{ comment.author.pdpPath }}" alt="Pdp" />
             </div>
-            <a href="#" class="name">{{ comment.author.firstName}} {{ comment.author.lastName}}</a>
+            <a href="#" class="name">{{ comment.author.getFullName() }}</a>
         </div>
         <span class="date">{{ comment.date}}</span>
     </div>

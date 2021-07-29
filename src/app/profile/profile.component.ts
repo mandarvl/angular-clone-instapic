@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DataList } from '../data/dataList';
+import { User } from '../model/User';
 
 @Component({
   selector: 'app-profile',
@@ -6,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
-
-  constructor() { }
+  user: User ;
+  constructor() { 
+    this.user = DataList.users[0] ;
+  }
 
   ngOnInit(): void {
   }

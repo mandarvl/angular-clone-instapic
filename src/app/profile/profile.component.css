@@ -1,0 +1,33 @@
+.profile .main-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-info{
+    z-index: 99;
+    margin-top: -100px;
+    text-align: center;
+}
+
+.profile .main-info .pdp-container{
+    width: 180px;
+    height: 180px;
+    border: 4px rgb(247, 247, 247) solid;
+    margin: auto;
+}
+
+.main-info .user-name{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgb(34, 34, 34) ;
+    margin: 10px 0 ;
+}
+
+.pdc-cover{
+    height: 250px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

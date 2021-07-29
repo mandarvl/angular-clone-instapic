@@ -34,6 +34,7 @@ export class DetailPostComponent implements OnInit {
     console.log(this.textarea.nativeElement.value) ;
     componentRef.instance.comment.content = this.textarea.nativeElement.value ;
     componentRef.instance.comment.date = "A l'instant" ;
+    this.textarea.nativeElement.value = "" ;
   }
 
 }
