@@ -20,8 +20,8 @@
         </div>
         <h1><i class="fa fa-comment"></i> Commentaires</h1>
         <div class="comments-container">
-            <ng-container *ngFor="let item of DataReference.comments">
-                <app-comment class="colonne-4" [comment]="item"></app-comment>
+            <ng-container *ngFor="let item of selectedPost.post.GetComments()">
+                <app-comment [comment]="item"></app-comment>
             </ng-container>
             <ng-template appPlaceHolder></ng-template>
         </div>

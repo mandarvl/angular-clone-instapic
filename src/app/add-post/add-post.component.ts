@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { DataList } from '../data/dataList';
 import { Post } from '../model/Post';
 
@@ -13,9 +14,11 @@ export class AddPostComponent implements OnInit {
   @ViewChild('selectedImg') selectedImg:any;
   selectedSrc:any ;
   showPreview: boolean ;
-  constructor() { 
+
+  constructor(private titleService:Title) {
     this.selectedSrc = "" ;
     this.showPreview = false ;
+    this.titleService.setTitle("Nouvelle publication | par Ravalison Manda Jerisoa IMTICIA5");
   }
 
   ngOnInit(): void {

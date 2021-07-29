@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ListePostsComponent } from './liste-posts/liste-posts.component';
+import {Title} from "@angular/platform-browser";
 
 @Component({
   selector: 'app-root',
@@ -7,5 +8,7 @@ import { ListePostsComponent } from './liste-posts/liste-posts.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'InstaPic';
+  constructor(private titleService:Title) {
+    this.titleService.setTitle("InstaPic | par Ravalison Manda Jerisoa IMTICIA5");
+  }
 }

@@ -21,9 +21,10 @@ export class DataList{
     ] ;
 
     static comments : Comment[] = [
-        new Comment(1, "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.", 1, "4h"),
-        new Comment(2, "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.", 3, "30m"),
-        new Comment(3, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 3, "20m")
+        new Comment(1, "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.", 1, "4h", 1),
+        new Comment(2, "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.", 3, "30m", 1),
+        new Comment(3, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 3, "20m", 2),
+        new Comment(4, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 2, "20m", 3)
     ]
 
     static GetUserById(id: number):User{
@@ -39,6 +40,14 @@ export class DataList{
             (post) => {
                 return post.authorId == id
             }
-        )
+        ) ;
+    }
+
+    static GetCommentsByPostId(postId: number):Comment[]{
+        return <Comment[]> DataList.comments.filter(
+            (com) => {
+                return com.postId == postId
+            }
+        ) ;
     }
 }

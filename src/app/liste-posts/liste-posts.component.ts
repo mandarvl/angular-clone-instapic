@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { DataList } from '../data/dataList' ;
 import { Post } from '../model/Post';
 import { PostComponent } from '../post/post.component' ;
@@ -13,7 +14,7 @@ export class ListePostsComponent implements OnInit {
   @Input() selectedPost: PostComponent ;
   hideDetail:boolean ;
   @Input() userId:number;
-  constructor() { 
+  constructor(private titleService:Title) { 
     this.hideDetail = true ;
     this.selectedPost = new PostComponent() ;
     this.posts = DataList.posts ;
@@ -23,6 +24,8 @@ export class ListePostsComponent implements OnInit {
   ngOnInit(): void {
     if(this.userId != 0){
       this.posts = DataList.GetPostsByUserId(this.userId) ;
+    }else{
+      this.titleService.setTitle("InstaPic | par Ravalison Manda Jerisoa IMTICIA5");
     }
   }
 

@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { DataList } from '../data/dataList';
 import { User } from '../model/User';
 
@@ -9,8 +10,9 @@ import { User } from '../model/User';
 })
 export class ProfileComponent implements OnInit {
   @Input() user: User ;
-  constructor() { 
+  constructor(private titleService:Title) { 
     this.user = DataList.GetUserById(3) ;
+    this.titleService.setTitle("Profil de "+this.user.getFullName()+" | par Ravalison Manda Jerisoa IMTICIA5");
   }
 
   ngOnInit(): void {

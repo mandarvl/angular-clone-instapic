@@ -1,5 +1,6 @@
 import { DataList } from "../data/dataList";
 import {User} from "../model/User" ;
+import {Comment} from "../model/Comment" ;
 
 export class Post{
     id: number ;
@@ -18,5 +19,9 @@ export class Post{
 
     GetAuthor():User{
         return DataList.GetUserById(this.authorId) ;
+    }
+
+    GetComments():Comment[]{
+        return DataList.GetCommentsByPostId(this.id) ;
     }
 }
