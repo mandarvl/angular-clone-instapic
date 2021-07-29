@@ -23,9 +23,10 @@
             <ng-container *ngFor="let item of DataReference.comments">
                 <app-comment class="colonne-4" [comment]="item"></app-comment>
             </ng-container>
+            <ng-template appPlaceHolder></ng-template>
         </div>
-        <form class="custom-form">
-            <textarea placeholder="Entrer votre commentaire..."></textarea>
+        <form class="custom-form" (submit)="addComment($event)">
+            <textarea #textMessage placeholder="Entrer votre commentaire..."></textarea>
             <div class="button-container">
                 <button class="btn-icon" type="submit" name="envoyer"><i class="fa fa-send" aria-hidden="true"></i></button>
             </div>

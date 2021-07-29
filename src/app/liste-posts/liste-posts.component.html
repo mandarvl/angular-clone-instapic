@@ -1,4 +1,4 @@
-<div class="flex-container flex-space">
+<div class="grid-container">
     <ng-container *ngFor="let item of dataReference.posts">
         <app-post (sendRequestToData)="processReq($event)" class="colonne-4" [post]="item"></app-post>
     </ng-container>

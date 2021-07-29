@@ -9,6 +9,7 @@ import { PostComponent } from './post/post.component';
 import { InstagramComponent } from './instagram/instagram.component';
 import { DetailPostComponent } from './detail-post/detail-post.component';
 import { CommentComponent } from './comment/comment.component';
+import { PlaceHolderDirective } from './utils/placeholder.directive';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CommentComponent } from './comment/comment.component';
     PostComponent,
     InstagramComponent,
     DetailPostComponent,
-    CommentComponent
+    CommentComponent,
+    PlaceHolderDirective
   ],
   imports: [
     BrowserModule,
