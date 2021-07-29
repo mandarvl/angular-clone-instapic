@@ -32,9 +32,14 @@ a{
     color: rgb(255, 118, 38) ;
 }
 
+form{
+    width: 100% ;
+}
+
 textarea{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
+    color: rgb(94, 94, 94);
 }
 
 h1{
@@ -42,8 +47,20 @@ h1{
     margin: 0 ;
 }
 
+button{
+    cursor: pointer;
+}
+
 div, section, article, header, footer, form{
     box-sizing: border-box;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+.form-container{
+    margin: 15px 0 ;
 }
 
 [class^="btn-"]{
@@ -52,7 +69,7 @@ div, section, article, header, footer, form{
     background-color: rgb(255, 118, 38) ;
     color: white ;
     font-weight: bold ;
-    padding: 14px 20px ;
+    padding: 12px 20px ;
     box-sizing: border-box ;
     cursor: pointer;
     transition: all .8s ;

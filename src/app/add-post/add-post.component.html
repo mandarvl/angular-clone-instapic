@@ -1,0 +1,23 @@
+<h3><i class="fa fa-edit"></i> Créer une publication</h3>
+<form (submit)="addPost($event)" class="new-post form-add-post">
+    <div class="img-container">
+        <div class="inner">
+            <label for="file" class="add-file" [hidden]="showPreview">
+                <i class="fa fa-plus-circle"></i>
+            </label>
+            <input type="file" id="file" (change)="showSelectedImage($event)" #file />
+            <img #selectedImg [src]="selectedSrc" [hidden]="!showPreview"/>
+        </div>
+    </div>
+    <div class="right-data">
+        <div class="form-container">
+            <label>Description</label>
+        </div>
+        <div class="form-container">
+            <textarea #description></textarea>
+        </div>
+        <div>
+            <input type="submit" class="btn-normal" value="Publier" />
+        </div>
+    </div>
+</form>

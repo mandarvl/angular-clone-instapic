@@ -10,6 +10,7 @@ import { DetailPostComponent } from './detail-post/detail-post.component';
 import { CommentComponent } from './comment/comment.component';
 import { PlaceHolderDirective } from './utils/placeholder.directive';
 import { ProfileComponent } from './profile/profile.component';
+import { AddPostComponent } from './add-post/add-post.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ProfileComponent } from './profile/profile.component';
     DetailPostComponent,
     CommentComponent,
     PlaceHolderDirective,
-    ProfileComponent
+    ProfileComponent,
+    AddPostComponent
   ],
   imports: [
     BrowserModule,

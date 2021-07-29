@@ -27,7 +27,7 @@
     color: rgb(139, 139, 139) ;
 }
 
-#menu ul li.active .fa{
+#menu ul li a.active .fa{
     color:rgb(39, 39, 39) ;
 }
 
