@@ -1,3 +1,8 @@
+.profile{
+    background-color: #fff;
+    padding-bottom: 30px;
+}
+
 .profile .main-info{
     display: flex;
     flex-direction: column;

@@ -99,8 +99,12 @@ div, section, article, header, footer, form{
 }
 
 #right-content{
-    margin: 10px 0 20px 70px;
+    margin: 10px 0 20px 72px;
     padding: 0 5px;
+}
+
+.container{
+    padding: 0 20px;
 }
 
 .grid-container{

@@ -11,6 +11,7 @@ import { CommentComponent } from './comment/comment.component';
 import { PlaceHolderDirective } from './utils/placeholder.directive';
 import { ProfileComponent } from './profile/profile.component';
 import { AddPostComponent } from './add-post/add-post.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AddPostComponent } from './add-post/add-post.component';
     CommentComponent,
     PlaceHolderDirective,
     ProfileComponent,
-    AddPostComponent
+    AddPostComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
