@@ -25,7 +25,7 @@ export class AddPostComponent implements OnInit {
     $event.preventDefault() ;
     const nbPost = DataList.posts.length ;
     const lastId = DataList.posts[nbPost - 1].id ;
-    DataList.posts.push(new Post(lastId + 1, "assets/images/11.jpg", DataList.users[2], "2min", this.description.nativeElement.value)) ;
+    DataList.posts.push(new Post(lastId + 1, "assets/images/11.jpg", 3, "2min", this.description.nativeElement.value)) ;
     this.description.nativeElement.value = "" ;
   }
 

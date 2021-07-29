@@ -2,9 +2,9 @@
     <div class="post-header">
         <div class="post-user">
             <div class="pdp-container">
-                <img src="../../{{post.author.pdpPath}}" alt="Pdp" />
+                <img src="../../{{post.GetAuthor().pdpPath}}" alt="Pdp" />
             </div>
-            <a href="#" class="name">{{ post.author.getFullName() }}</a>
+            <a href="#" class="name">{{ post.GetAuthor().getFullName() }}</a>
         </div>
         <div>
             <span class="date">{{post.date}}</span>

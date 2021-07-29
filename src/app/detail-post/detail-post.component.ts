@@ -30,7 +30,7 @@ export class DetailPostComponent implements OnInit {
     $event.preventDefault() ;
     const componentFactory = this.componentFactoryResolver.resolveComponentFactory(CommentComponent) ;
     const componentRef = this.newComments.viewContainerRef.createComponent(componentFactory) ;
-    componentRef.instance.comment.author = this.DataReference.users[2] ;
+    componentRef.instance.comment.authorId = 3 ;
     console.log(this.textarea.nativeElement.value) ;
     componentRef.instance.comment.content = this.textarea.nativeElement.value ;
     componentRef.instance.comment.date = "A l'instant" ;

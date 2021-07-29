@@ -1,17 +1,22 @@
+import { DataList } from "../data/dataList";
 import {User} from "../model/User" ;
 
 export class Post{
     id: number ;
     imagePath: string ;
-    author: User ;
+    authorId: number ;
     date: string ;
     description: string ;
 
-    constructor(id = 0, imagePath = '', author = new User(), date = '', description = ''){
+    constructor(id = 0, imagePath = '', authorId = 0, date = '', description = ''){
         this.id = id ;
         this.imagePath = imagePath ;
-        this.author = author ;
+        this.authorId = authorId ;
         this.date = date ;
         this.description = description ;
+    }
+
+    GetAuthor():User{
+        return DataList.GetUserById(this.authorId) ;
     }
 }

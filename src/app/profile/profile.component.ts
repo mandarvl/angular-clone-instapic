@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { DataList } from '../data/dataList';
 import { User } from '../model/User';
 
@@ -8,9 +8,9 @@ import { User } from '../model/User';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
-  user: User ;
+  @Input() user: User ;
   constructor() { 
-    this.user = DataList.users[0] ;
+    this.user = DataList.GetUserById(3) ;
   }
 
   ngOnInit(): void {

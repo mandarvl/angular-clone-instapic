@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ListePostsComponent } from './liste-posts/liste-posts.component';
 
 @Component({
   selector: 'app-root',

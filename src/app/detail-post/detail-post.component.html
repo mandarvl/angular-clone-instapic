@@ -9,16 +9,16 @@
         <div class="user-header">
             <div class="post-user">
                 <div class="pdp-container">
-                    <img src="../../{{ selectedPost.post.author.pdpPath }}" alt="Pdp" />
+                    <img src="../../{{ selectedPost.post.GetAuthor().pdpPath }}" alt="Pdp" />
                 </div>
-                <a href="#" class="name">{{ selectedPost.post.author.getFullName() }}</a>
+                <a href="#" class="name">{{ selectedPost.post.GetAuthor().getFullName() }}</a>
             </div>
             <span class="date">12h</span>
         </div>
         <div class="main-detail">
             <p>{{selectedPost.post.description}}</p>
         </div>
-        <h1>Commentaires</h1>
+        <h1><i class="fa fa-comment"></i> Commentaires</h1>
         <div class="comments-container">
             <ng-container *ngFor="let item of DataReference.comments">
                 <app-comment class="colonne-4" [comment]="item"></app-comment>

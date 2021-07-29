@@ -2,9 +2,9 @@
     <div class="user-header">
         <div class="post-user">
             <div class="pdp-container">
-                <img src="../../{{ comment.author.pdpPath }}" alt="Pdp" />
+                <img src="../../{{ comment.GetAuthor().pdpPath }}" alt="Pdp" />
             </div>
-            <a href="#" class="name">{{ comment.author.getFullName() }}</a>
+            <a href="#" class="name">{{ comment.GetAuthor().getFullName() }}</a>
         </div>
         <span class="date">{{ comment.date}}</span>
     </div>
