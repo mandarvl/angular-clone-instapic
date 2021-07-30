@@ -1,5 +1,5 @@
 {
-  "name": "my-first-project",
+  "name": "angular-instaPic",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -18,6 +18,7 @@
     "@angular/platform-browser": "~12.1.2",
     "@angular/platform-browser-dynamic": "~12.1.2",
     "@angular/router": "~12.1.2",
+    "ajv": "^6.12.6",
     "font-awesome": "^4.7.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",
